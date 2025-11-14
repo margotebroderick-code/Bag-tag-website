@@ -3,168 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tag Pro Sports – Shop</title>
-
-  <!-- Cool Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-
+  <title>Tag Pro Sports</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
+    /* Page Load Animation */
+    body { opacity: 0; animation: fadeIn 1s ease forwards; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     :root {
-      --light-blue: #cfeeff;
-      --light-teal: #b8f2e6;
-      --accent-blue: #4db6ff;
-      --accent-teal: #4dd4c6;
-      --text-dark: #08324a;
+      --blue: #cce7ff;
+      --teal: #c7f5f0;
+      --accent: #9fe2d9;
+      --text-dark: #1f2a38;
+      --button: #aeeaff;
+      --button-hover: #97dbff;
     }
 
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background: var(--light-blue);
+      font-family: 'Poppins', sans-serif;
+      background: var(--blue);
       color: var(--text-dark);
     }
 
     header {
-      background: var(--light-teal);
-      text-align: center;
+      background: var(--teal);
       padding: 1.5rem;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
       font-size: 2rem;
-      font-weight: 700;
+      font-weight: 600;
     }
 
     nav a {
       margin: 0 1rem;
       text-decoration: none;
-      color: var(--text-dark);
       font-weight: 600;
+      color: var(--text-dark);
+      transition: 0.3s ease;
     }
 
     nav a:hover {
-      color: var(--accent-blue);
+      color: #0088aa;
     }
 
-    /* SHOP GRID */
-    .shop-container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    .hero {
       text-align: center;
+      padding: 4rem 1rem;
     }
 
-    .shop-container h2 {
-      font-size: 2rem;
-      margin-bottom: 2rem;
-      font-weight: 700;
+    .hero h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto;
+      font-size: 1.1rem;
     }
 
-    .item {
-      background: white;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    }
-
-    .item img {
-      width: 100%;
-      border-radius: 8px;
-    }
-
-    .item h3 {
-      margin: 0.8rem 0;
-      font-size: 1.3rem;
-      font-weight: 700;
-    }
-
-    .item p {
-      margin: 0.5rem 0;
-      color: #0c4c68;
-    }
-
-    .buy-btn {
-      margin-top: 1rem;
-      background: var(--accent-blue);
+    .hero button {
+      margin-top: 2rem;
+      padding: 0.9rem 1.8rem;
       border: none;
-      padding: 0.7rem 1.5rem;
+      background: var(--button);
       font-size: 1rem;
-      border-radius: 6px;
-      color: white;
       font-weight: 600;
+      border-radius: 8px;
       cursor: pointer;
+      transition: 0.3s ease;
     }
 
-    .buy-btn:hover {
-      background: var(--accent-teal);
+    .hero button:hover {
+      background: var(--button-hover);
+      transform: scale(1.06);
     }
 
     footer {
       text-align: center;
       padding: 1rem;
-      background: var(--light-teal);
+      background: var(--teal);
       margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
-
   <header>
     <h1>Tag Pro Sports</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
-      <a href="#contact">Contact</a>
     </nav>
+    <button onclick="window.location.href='index.html'" style="margin-top:1rem;padding:0.6rem 1.2rem;border:none;background:var(--button);border-radius:8px;font-weight:600;cursor:pointer;transition:0.3s ease;">Back to Homepage</button>
   </header>
 
-  <div class="shop-container">
-    <h2>Shop Our Tags</h2>
+  <section class="hero">
+    <h2>Premium Custom Sports Bag Tags</h2>
+    <p>Fresh, durable, personalized designs for every athlete. Made with care by Margot, Macie, and Mckenna.</p>
+    <button onclick="window.location.href='shop.html'">Shop Now</button>
+  </section>
 
-    <div class="grid">
-
-      <div class="item">
-        <img src="https://via.placeholder.com/250x150?text=Soccer+Tag" alt="Soccer Tag">
-        <h3>Soccer Tag</h3>
-        <p>Customize with name, number & team.</p>
-        <button class="buy-btn">Buy</button>
-      </div>
-
-      <div class="item">
-        <img src="https://via.placeholder.com/250x150?text=Baseball+Tag" alt="Baseball Tag">
-        <h3>Baseball Tag</h3>
-        <p>Perfect for players & teams.</p>
-        <button class="buy-btn">Buy</button>
-      </div>
-
-      <div class="item">
-        <img src="https://via.placeholder.com/250x150?text=Hockey+Tag" alt="Hockey Tag">
-        <h3>Hockey Tag</h3>
-        <p>Durable, bold, and made for the rink.</p>
-        <button class="buy-btn">Buy</button>
-      </div>
-
-      <div class="item">
-        <img src="https://via.placeholder.com/250x150?text=Basketball+Tag" alt="Basketball Tag">
-        <h3>Basketball Tag</h3>
-        <p>Great for school teams and tournaments.</p>
-        <button class="buy-btn">Buy</button>
-      </div>
-
-    </div>
-  </div>
-
-  <footer>
-    <p>Created by Margot, Macie, and Mckenna • © 2025 Tag Pro Sports</p>
-  </footer>
-
+  <footer>© 2025 Tag Pro Sports — created by Margot, Macie & Mckenna</footer>
 </body>
 </html>
