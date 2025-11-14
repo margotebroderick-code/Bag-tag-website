@@ -3,117 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SportTag Pro – Personalized Bag Tags</title>
-
-  <!-- Cool, modern font -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
-
+  <title>Tag Pro Sports</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --blue: #0077cc;
-      --teal: #00b3a4;
-      --text-light: #f0faff;
-      --text-dark: #002b40;
-      --button-bg: #00b3a4;
-      --button-hover: #009b90;
-      --footer-bg: #006fa6;
+      --blue: #cce7ff;
+      --teal: #c7f5f0;
+      --accent: #9fe2d9;
+      --text-dark: #1f2a38;
+      --button: #aeeaff;
+      --button-hover: #97dbff;
     }
 
     body {
       margin: 0;
-      font-family: 'Montserrat', sans-serif;
-      background-color: var(--blue);
-      color: var(--text-light);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      background: var(--blue);
+      color: var(--text-dark);
     }
 
     header {
-      background-color: var(--teal);
-      padding: 1.8rem 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      background: var(--teal);
+      padding: 1.5rem;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     header h1 {
       margin: 0;
-      font-size: 2.5rem;
-      font-weight: 800;
-      color: white;
+      font-size: 2rem;
+      font-weight: 600;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      color: var(--text-dark);
+      transition: 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #0088aa;
     }
 
     .hero {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+      text-align: center;
       padding: 4rem 1rem;
     }
 
-    .hero img {
-      width: 230px;
-      margin-bottom: 1.5rem;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-    }
-
     .hero h2 {
-      font-size: 2rem;
-      font-weight: 700;
-      color: white;
+      font-size: 2.2rem;
       margin-bottom: 1rem;
-      max-width: 600px;
     }
 
     .hero p {
       max-width: 600px;
+      margin: 0 auto;
       font-size: 1.1rem;
-      color: #dff9ff;
-      margin-bottom: 2rem;
-      line-height: 1.6;
     }
 
-    .hero a button {
-      background-color: var(--button-bg);
-      color: white;
-      font-size: 1.1rem;
-      font-weight: 600;
+    .hero button {
+      margin-top: 2rem;
+      padding: 0.9rem 1.8rem;
       border: none;
-      padding: 0.9rem 2rem;
-      border-radius: 40px;
+      background: var(--button);
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
       cursor: pointer;
-      transition: background-color 0.2s ease, transform 0.2s ease;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      transition: 0.3s ease;
     }
 
-    .hero a button:hover {
-      background-color: var(--button-hover);
-      transform: translateY(-3px);
+    .hero button:hover {
+      background: var(--button-hover);
+      transform: scale(1.06);
     }
 
     footer {
-      background-color: var(--footer-bg);
-      color: white;
-      padding: 1.2rem;
-      font-size: 0.95rem;
-    }
-
-    footer .creators {
-      font-style: italic;
-      color: #c3f8ff;
-      margin-top: 0.3rem;
-      font-weight: 500;
+      text-align: center;
+      padding: 1rem;
+      background: var(--teal);
+      margin-top: 3rem;
+      font-size: 0.9rem;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SportTag Pro</h1>
+    <h1>Tag Pro Sports</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <img src="https://via.placeholder.com/230x150?text=SportTag+Pro+Logo" alt="SportTag Pro Logo" />
-    <h2>Personalize Your Game</h2>
-    <p>SportTag Pro creates high-quality, custom sports bag tags made just for you. Choose
+    <h2>Premium Custom Sports Bag Tags</h2>
+    <p>Fresh, durable, personalized designs for every athlete. Made with care by Margot, Macie, and Mckenna.</p>
+    <button onclick="window.location.href='shop.html'">Shop Now</button>
+  </section>
+
+  <footer>© 2025 Tag Pro Sports — created by Margot, Macie & Mckenna</footer>
+</body>
+</html>
+
