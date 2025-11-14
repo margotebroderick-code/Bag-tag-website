@@ -3,19 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tag Pro Sports</title>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap"" rel="stylesheet">
+  <title>Shop – Tag Pro Sports</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    /* Page Load Animation */
     body { opacity: 0; animation: fadeIn 1s ease forwards; }
     @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
     :root {
       --blue: #cce7ff;
       --teal: #c7f5f0;
       --accent: #9fe2d9;
       --text-dark: #1f2a38;
-      --button: #aeeaff;
-      --button-hover: #97dbff;
+      --card-bg: #ffffff;
     }
 
     body {
@@ -27,8 +26,8 @@
 
     header {
       background: var(--teal);
-      padding: 1.5rem;
       text-align: center;
+      padding: 1.5rem;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
@@ -50,37 +49,48 @@
       color: #0088aa;
     }
 
-    .hero {
+    h2 {
       text-align: center;
-      padding: 4rem 1rem;
-    }
-
-    .hero h2 {
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 1.1rem;
-    }
-
-    .hero button {
+      font-size: 2.4rem;
       margin-top: 2rem;
-      padding: 0.9rem 1.8rem;
-      border: none;
-      background: var(--button);
-      font-size: 1rem;
-      font-weight: 600;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: 0.3s ease;
     }
 
-    .hero button:hover {
-      background: var(--button-hover);
-      transform: scale(1.06);
+    .products {
+      max-width: 1100px;
+      margin: 2rem auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .product {
+      background: var(--card-bg);
+      border-radius: 12px;
+      padding: 1rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+      transition: 0.4s ease;
+    }
+
+    .product:hover {
+      transform: scale(1.05);
+      box-shadow: 0 7px 18px rgba(0,0,0,0.18);
+    }
+
+    .product img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .product h3 {
+      margin-top: 0.7rem;
+      font-size: 1.7rem;
+    }
+
+    .product p {
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      opacity: 0.8;
     }
 
     footer {
@@ -99,14 +109,35 @@
       <a href="index.html">Home</a>
       <a href="shop.html">Shop</a>
     </nav>
-    
   </header>
 
-  <section class="hero">
-    <h2>Premium Custom Sports Bag Tags</h2>
-    <p>Fresh, durable, personalized designs for every athlete. Made with care by Margot, Macie, and Mckenna.</p>
-    <button onclick="window.location.href='shop.html'">Shop Now</button>
-  </section>
+  <h2>Our Custom Tag Collection</h2>
+
+  <div class="products">
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Soccer+Tag" alt="Soccer Tag">
+      <h3>Soccer Tag</h3>
+      <p>Personalized with your colors and name.</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Baseball+Tag" alt="Baseball Tag">
+      <h3>Baseball Tag</h3>
+      <p>Durable, waterproof, and long‑lasting.</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Hockey+Tag" alt="Hockey Tag">
+      <h3>Hockey Tag</h3>
+      <p>Styled to match your team's spirit.</p>
+    </div>
+
+    <div class="product">
+      <img src="https://via.placeholder.com/300x200?text=Volleyball+Tag" alt="Volleyball Tag">
+      <h3>Volleyball Tag</h3>
+      <p>Bright, bold, and beautifully customizable.</p>
+    </div>
+  </div>
 
   <footer>© 2025 Tag Pro Sports — created by Margot, Macie & Mckenna</footer>
 </body>
